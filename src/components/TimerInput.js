@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 export default class TimerInput extends Component {
-    
+
     onSubmit(event) {
         event.preventDefault();
         const strSeconds = this.refs.seconds.value;
@@ -14,7 +14,7 @@ export default class TimerInput extends Component {
       render() {
         return (
           <form ref="form" onSubmit={this.onSubmit.bind(this)}>
-            <input type="text" ref="seconds" placeholder="enter time in seconds"/>
+            <input type="number" ref="seconds" placeholder="enter time here"/>
             <input type="submit" value="Start"></input>
           </form>
         )
