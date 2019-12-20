@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Timer from './Timer';
+import TimerInput from './TimerInput';
 
 class App extends Component {
   render() {
