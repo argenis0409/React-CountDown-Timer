@@ -14,3 +14,9 @@ npm i
 ```
 npm start
 ```
+## General Info 
+After running the above commands the project should open in your browser.
+Once the project opens input the desired time in seconds which means 60 equals to 1 min.
+
+### Note:
+Still working on making it look good.
