@@ -1,11 +1,22 @@
 import React, { Component } from 'react'
 
 export default class Timer extends Component {
-    render() {
-        return (
-            <div>
-                <h1>Timer</h1>
-            </div>
-        )
+
+    format(time) {
+        let seconds = time % 60;
+        let minutes = Math.floor(time / 60);
+        
+        minutes = minutes.toString().length === 1 ? "0" + minutes : minutes;
+        seconds = seconds.toString().length === 1 ? "0" + seconds : seconds;
+        return minutes + ':' + seconds;
     }
+
+      render () {
+        const {time} = this.props;
+        return (
+          <div className="displayedTime">
+            <h1>{this.format(time)}</h1>
+          </div>
+        )
+      }
 }
